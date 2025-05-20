@@ -35,6 +35,10 @@ const Navbar = () => {
         <li>Education</li>
       </a>
 
+      <a target="_blank" href="https://drive.google.com/file/d/1lSbkOCeR3S9KYpS2JCxXMxdoo1ogKJ6h/view?usp=sharing" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+        <li>Resume</li>
+      </a>
+
       <a href="#contact" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
         <li>Contact</li>
       </a>

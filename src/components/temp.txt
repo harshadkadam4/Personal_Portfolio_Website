@@ -1,19 +1,18 @@
 Harshad Santosh Kadam
-Pune, Maharashtra, 411007
+Pune, Maharashtra
 Email: kadamharshad00@gmail.com
 Phone: +91 9545823532
-Date: 12/02/2025
 
 Hiring Manager
-She Can Foundation
+DW Innovation Private Limited
 
-Dear Hiring Manager,
+Subject: Application for Android App Developer Position
 
-I am excited to apply for the Android App Development Intern position at She Can Foundation. With a solid foundation in Android development using Java and hands-on experience in building apps with Firebase integration, responsive UI/UX design, and performance optimization, I am eager to contribute to your innovative solutions.
+I am writing to apply for the Android App Developer position at DW Innovation Private Limited. I have experience in Android development using Java and Firebase, and I’ve built apps like an Image Editor and a Mess Attendance App with real-time sync.
 
-During my academic journey, I developed projects like an Image Editor App, Text Editor, Hall Booking Management and a Mess Attendance App, which involved implementing real-time data synchronization and enhancing user experience. My adaptability to emerging technologies and collaborative mindset align well with She Can Foundation’s mission of delivering scalable IT solutions.
+I also have backend development skills using Spring Boot and REST APIs, which help me build complete mobile and web solutions. I'm currently pursuing my M.Sc. in Computer Science and enjoy creating useful, user-friendly apps.
 
-Thank you for considering my application. I would welcome the opportunity to discuss how my skills and experience can add value to She Can Foundation.
+I would be happy to join your team and contribute to your tech-driven education projects. Thank you for your time and consideration.
 
 Sincerely,
 Harshad Santosh Kadam

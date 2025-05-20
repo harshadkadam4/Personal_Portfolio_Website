@@ -9,8 +9,8 @@ import { motion } from "framer-motion"
 const projectsData = [
   {
     image: image1,
-    title: "Image Editor",
-    description: "The Android-Based Image Editor App is a versatile tool for creating and editing images on mobile devices. This feature-rich application includes a pen tool for drawing with adjustable stroke size and color customization, an eraser for precise corrections, and options to add images seamlessly. Users can also insert editable and movable textboxes, clear all contents with a single action, and save their drawings or edited images.",
+    title: "QuickDraw",
+    description: "The Android-Based Drawing App is a versatile tool for creating and editing drawings on mobile devices. This feature-rich application includes a pen tool for drawing, with adjustable stroke size and color customization, an eraser for precise corrections, and options to add images seamlessly. Users can insert editable and movable textboxes, delete textboxes, clear all contents with a single action, and save their drawings or edited images.",
     technologies: ["Android", "Java", "XML"]
   },
   {
@@ -18,6 +18,12 @@ const projectsData = [
     title: "Mess Attendance App",
     description: "The Mess Attendance App simplifies attendance tracking for mess services. Built with Java, Firebase Realtime Database, and XML, the app enables users to record attendance efficiently. Students can mark their attendance status (e.g., ”Present” or ”Absent”) directly through the app. The platform stores attendance records securely in the cloud and provides an organized list view of attendees for administrators. The use of a real-time database ensures instant updates and seamless data synchronization, making the attendance process more efficient.",
     technologies: ["Android", "Java", "Firebase Realtime Database","XML"]
+  },
+  {
+    image: image4,
+    title: "Banking System",
+    description: " Developed a Simple Banking System implementing basic CRUD operations. The application provides essential banking functionalities, including creating a bank account, fetching account details, making deposits and withdrawals, deleting account, and retrieving all account details.",
+    technologies: ["Spring Boot", "Spring Data JPA (Hibernate)", "MySQL", "REST API"]
   },
   {
     image: image3,
@@ -28,14 +34,8 @@ const projectsData = [
   {
     image: image3,
     title: "Personal Portfolio",
-    description: "Developed a program to automate the importing of cricket match data from JSON files into an SQLite database. The program efficiently fetches files from a specified folder, processes the data, and integrates it into the database, handling both file operations and data insertion.",
-    technologies: ["Python", "SQLite", "JSON"]
-  },
-  {
-    image: image4,
-    title: "Text Editor",
-    description: "Developed a command-line text editor that allows users to add and delete lines of text, display file contents, and perform search and replace operations. The editor also includes a feature to save changes, ensuring that all modifications are stored efficiently.",
-    technologies: ["C"]
+    description: "I developed a personal portfolio website using HTML, CSS, ReactJS, TailwindCSS, and Framer Motion. It includes sections like Home, Tech, Projects, Education, and Contact to showcase my skills, work, and background. The site features smooth animations and a resume download option. It is fully responsive and designed for a clean and modern look.",
+    technologies: ["HTML", "CSS", "ReactJS", "TailwindCSS"]
   }
 ]
 

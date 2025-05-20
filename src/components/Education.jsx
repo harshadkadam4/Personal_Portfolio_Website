@@ -2,12 +2,12 @@ import React from 'react'
 
 const Education = () => {
   return (
-    <div id="education" className="flex min-h-screen w-full flex-col gap-11 md:px-16 md:py-24">
+    <div id="education" className="flex min-h-screen w-full flex-col items-center gap-11 md:px-16 md:py-24">
         <h1 className="text-4xl font-light text-white items-center justify-center flex-col md:text-6xl"> 
             Education
         </h1>
 
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-center">
             <div className="  text-white py-6" >
                 <h1 className="text-2xl font-semibold py-2">M.Sc. Computer Science &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (2023 – 2025) (Expected)</h1>
                 <p className="text-white">Department of Computer Science, Savitribai Phule Pune University, Pune.</p>
