@@ -35,7 +35,7 @@ const projectsData = [
     technologies: ["Python", "SQLite", "JSON"]
   },
   {
-    github: "https://github.com/harshadkadam4/portfolio",
+    github: "https://github.com/harshadkadam4/Personal_Portfolio_Website",
     title: "Personal Portfolio",
     description: "I developed a personal portfolio website using HTML, CSS, ReactJS, TailwindCSS, and Framer Motion. It includes sections like Home, Tech, Projects, Education, and Contact to showcase my skills, work, and background. The site features smooth animations and a resume download option. It is fully responsive and designed for a clean and modern look.",
     technologies: ["HTML", "CSS", "ReactJS", "TailwindCSS"]
