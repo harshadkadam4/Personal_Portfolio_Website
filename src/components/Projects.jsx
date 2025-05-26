@@ -1,14 +1,7 @@
-import image1 from "/public/1.png"
-import image2 from "/public/2.png"
-import image3 from "/public/3.png"
-import image4 from "/public/4.png"
-import coding1 from "/public/coding1.jpeg"
-import coding2 from "/public/coding2.jpeg"
-import coding3 from "/public/coding3.png"
+import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
-
-import { motion } from "framer-motion"
-
+// Your project data
 const projectsData = [
   {
     github: "https://github.com/harshadkadam4/Draw_Android_App",
@@ -40,74 +33,72 @@ const projectsData = [
     description: "I developed a personal portfolio website using HTML, CSS, ReactJS, TailwindCSS, and Framer Motion. It includes sections like Home, Tech, Projects, Education, and Contact to showcase my skills, work, and background. The site features smooth animations and a resume download option. It is fully responsive and designed for a clean and modern look.",
     technologies: ["HTML", "CSS", "ReactJS", "TailwindCSS"]
   }
-]
+];
 
-const ProjectsCard = ({project}) => {
+// Animation wrapper
+const ScrolledReveal = ({ children }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.6 }}
+  >
+    {children}
+  </motion.div>
+);
+
+// Project Card Component
+const ProjectsCard = ({ project }) => {
   return (
     <ScrolledReveal>
-    <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
-      {/* <img src={project.image} className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px]"/> */}
-
-      <div className="flex flex-col gap-5">
-        <div className="flex flex-col gap-3">
-
-          <div className="text-xl font-semibold"> <a target="_blank" href={project.github}>{project.title}</a></div>
-          <p className="text-gray-400">{project.description}</p>
+      <div className="rounded-2xl border border-gray-700 bg-[#111827] p-6 transition-all duration-300 hover:scale-[1.02] shadow-md hover:shadow-lg">
+        <div className="flex flex-col gap-4">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-2xl font-semibold text-white hover:text-blue-400"
+          >
+            <FaGithub className="text-xl text-gray-400 hover:text-white" />
+            {project.title}
+          </a>
+          <p className="text-gray-400 text-sm md:text-base">{project.description}</p>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {project.technologies.map((tech, index) => (
+              <span
+                key={index}
+                className="rounded-full bg-gray-800 px-4 py-1 text-sm text-white"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
-
-          <div className="flex flex-wrap gap-5">
-            {
-              project.technologies.map((tech, index) => (
-                <span key={index} className="rounded-1g bg-black p-3">
-                  {tech}
-                </span>
-              ))
-            }
-          </div>
-
+        </div>
       </div>
-      
-    </div>
     </ScrolledReveal>
-  )
-}
+  );
+};
 
-const ScrolledReveal = ({children}) => {
-  return (
-    <motion.div
-    initial={{opacity:0, y:100}}
-    whileInView={{opacity:1, y:0}}
-    viewport={{once:true}}
-    transition={{duration:0.8}}
-    >
-      {children}
-
-    </motion.div>
-  )
-}
-
-
-
-
+// Main Projects Component
 const Projects = () => {
   return (
-    <div id="projects" className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 md:py-24">
+    <div
+      id="projects"
+      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 px-4 py-16 md:px-10 lg:px-20"
+    >
       <ScrolledReveal>
-      <h1 className="text-4xl font-light text-white md:text-6xl ">
-      My Projects</h1>
+        <h1 className="text-4xl font-light text-white md:text-6xl text-center">
+          My Projects
+        </h1>
       </ScrolledReveal>
 
-      <div className="flex w-full max-w-[1000px] flex-col gap-16 text-white">
-
-     { 
-      projectsData.map((project, index) => (
-          <ProjectsCard key={index} project={project}/>
-        ))
-      }
-
+      <div className="grid w-full max-w-5xl gap-10 md:grid-cols-1">
+        {projectsData.map((project, index) => (
+          <ProjectsCard key={index} project={project} />
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
